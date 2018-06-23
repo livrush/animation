@@ -68,6 +68,10 @@ h1 {
   background: url(/assets/billie-holiday.png);
 } */
 
+.animation-duration-3 {
+  animation-duration: 3s;
+}
+
 .animation-delay-500 {
   animation-delay: 500ms;
 }
