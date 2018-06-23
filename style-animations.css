@@ -1,0 +1,23 @@
+@keyframes sway {
+  from {
+    transform: rotate(-10deg) translateX(10rem);
+  }
+  50% {
+    transform: rotate(10deg) translateX(-10rem);
+  }
+  to {
+    transform: rotate(-10deg) translateX(10rem);
+  }
+}
+
+@keyframes sway {
+  from {
+    transform: translateY(10rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  to {
+    transform: translateY(10rem);
+  }
+}

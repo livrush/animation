@@ -1,0 +1,77 @@
+html {
+  background: linear-gradient(to bottom right, #ffafaf, #afafff);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  height: 100vh;
+}
+
+body {
+  background-image: url(./assets/topography.svg);
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  background: #fff;
+  height: 70vh;
+  width: 60vw;
+}
+
+h1 {
+  color: #fff;
+  font-family: Limelight;
+  font-size: 10vh;
+  margin: 0;
+  text-align: center;
+}
+
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+}
+
+.section:nth-of-type(2n) {
+  /* background: black; */
+}
+.container-img-venus {
+  height: 400px;
+  width: 450px;
+  position: relative;
+}
+
+.img-venus {
+  height: 400px;
+  width: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.img-venus-keyframes {
+  z-index: 5;
+}
+
+.img-venus img {
+  height: 100%;
+}
+
+.float {
+  animation-name: float;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+}
+
+.sway {
+  animation-name: sway;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
