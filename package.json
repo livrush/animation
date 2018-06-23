@@ -1,0 +1,11 @@
+{
+  "name": "animation-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "reveal-md animation.md --css style.css,style-animations.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
