@@ -39,4 +39,15 @@ $(document).ready(function() {
   })
 
   $('.img-venus-keyframes').click(e => $(e.currentTarget).fadeOut(1000));
+
+});
+
+var lineDrawing = anime({
+  targets: '#Spray circle',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
 });

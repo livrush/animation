@@ -30,12 +30,23 @@ iframe {
   width: 60vw;
 }
 
-h1 {
+h1, h2, h3 {
   color: #fff;
-  font-family: Limelight;
-  font-size: 10vh;
   margin: 0;
   text-align: center;
+}
+
+h1 {
+  font-family: Limelight;
+  font-size: 10vh;
+}
+
+h2 {
+  font-size: 7vh;
+}
+
+h3 {
+  font-size: 5vh;
 }
 
 .simpleEntrance {
