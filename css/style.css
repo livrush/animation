@@ -1,21 +1,31 @@
 html {
   background: linear-gradient(to bottom right, #ffafaf, #afafff);
   background-repeat: no-repeat;
-    background-attachment: fixed;
-
+  background-attachment: fixed;
   height: 100vh;
 }
 
 body {
   background-color: transparent;
   background-image: url(/assets/topography.svg);
+  color: #fff;
   font-family: 'Open Sans';
   margin: 0;
   padding: 0;
 }
 
+figure {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 iframe {
   background: #fff;
+  border: none;
   height: 70vh;
   width: 60vw;
 }
@@ -28,6 +38,10 @@ h1 {
   text-align: center;
 }
 
+.simpleEntrance {
+  animation-duration: 6s;
+}
+
 .section {
   align-items: center;
   display: flex;
@@ -38,13 +52,35 @@ h1 {
 
 }
 
-.section:nth-of-type(2n) {
-  /* background: black; */
+.section.empty > * {
+  display: none;
 }
+
+/* .section:nth-of-type(2n) {
+  background: url(/assets/billie-holiday.png);
+} */
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-750 {
+  animation-delay: 750ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
 .container-img-venus {
+  cursor: pointer;
   height: 400px;
   width: 450px;
   position: relative;
+}
+
+.container-img-venus:hover {
+  /* animation-name: shake; */
 }
 
 .img-venus {
@@ -75,4 +111,39 @@ h1 {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.shadow
+{
+  position: relative;
+}
+.shadow:before, .shadow:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.shadow:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
 }
