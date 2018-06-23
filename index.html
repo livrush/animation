@@ -6,65 +6,129 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/woah.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <div class="section">
-    <h1 class="comeInStyle">Understanding</h1>
-    <h1 class="flyIn">and Using</h1>
-    <h1 class="wowzors">Animation</h1>
-    <h1 class="simpleEntrance">In CSS and JS</h1>
-  </div>
-  <div class="section">
-    <h1>What is Animation?</h1>
-    <label>Wikipedia says...</label>
-    <p>Animation is a dynamic medium in which images or objects are manipulated to appear as moving images.</p>
-  </div>
-  <div class="section">
-    <h1>Key frames</h1>
-    <div class="container-img-venus">
-      <div class="img-venus img-venus-keyframes">
-        <img src="assets/venus-keyframe.gif" alt="">
-      </div>
-      <div class="img-venus">
-        <img src="assets/venus-final.gif" alt="">
+  <div class="section animated fadeIn">
+    <div class="section-inner">
+      <button class="btn btn-info btn-lg btn-begin animated pulse infinite">Begin</button>
+      <div class="title d-none animated fadeIn">
+        <h1 class="comeInStyle">Understanding</h1>
+        <h1 class="flyIn">and Using</h1>
+        <h1 class="wowzors">Animation</h1>
+        <h1 class="simpleEntrance">In CSS and JS</h1>
       </div>
     </div>
   </div>
-  <div class="section">
-    <h1>Animation is CSS</h1>
-    <label for="">Two parts</label>
-    <ol>
-      <li>What should happen?</li>
-      <li>How should it happen?</li>
-    </ol>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <div class="d-flex">
+        <h1>What is&nbsp;</h1>
+        <h1 class="animated bounce infinite">Animation</h1>
+        <h1>?</h1>
+      </div>
+      <label class="animated fadeInRight animation-delay-750">Wikipedia says...</label>
+      <p class="animated fadeInRight animation-delay-750">Animation is a dynamic medium in which images or objects are manipulated to appear as moving images.</p>
+    </div>
   </div>
-  <div class="section">
-    <h1>Animate.css</h1>
-    <iframe src="https://daneden.github.io/animate.css/"></iframe>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Animation is CSS</h1>
+      <label for="">Two parts</label>
+      <ol>
+        <li>What should happen?</li>
+        <li>How should it happen?</li>
+      </ol>
+    </div>
   </div>
-  <div class="section">
-    <h1>Hover.css</h1>
-    <iframe src="http://ianlunn.github.io/Hover/"></iframe>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Key frames</h1>
+      <div class="d-flex">
+        <div class="shadow container-img-venus animated">
+          <div class="img-venus img-venus-keyframes">
+            <img src="assets/venus-keyframe.gif" alt="">
+          </div>
+          <div class="img-venus">
+            <img src="assets/venus-final.gif" alt="">
+          </div>
+        </div>
+        <figure>
+          <figcaption>Keyframes in CSS</figcaption>
+          <pre>
+            <code>
+  @keyframes sway {
+    from {
+      transform: translateY(10rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    to {
+      transform: translateY(10rem);
+    }
+  }
+            </code>
+          </pre>
+        </figure>
+      </div>
+    </div>
   </div>
-  <div class="section">
-    <h1>Woah.css</h1>
-    <iframe src="http://www.joerezendes.com/projects/Woah.css/"></iframe>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Animate.css</h1>
+      <iframe class="fadeInLeft animated"></iframe>
+    </div>
   </div>
-  <div class="section">
-    <h1>Mo.js</h1>
-    <iframe src="http://mojs.io/"></iframe>
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Hover.css</h1>
+      <iframe class="fadeInLeft animated"></iframe>
+    </div>
   </div>
-  <div class="section">
-    <h1>GreenSock</h1>
-    <iframe src="https://greensock.com/"></iframe>
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Woah.css</h1>
+      <iframe class="fadeInLeft animated"></iframe>
+    </div>
   </div>
-  <div class="section">
-    <h1>Anime.js</h1>
-    <iframe src="http://animejs.com/"></iframe>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Animation is JS</h1>
+      <label for="">Any which way</label>
+      <ol>
+        <li>What should happen?</li>
+        <li>How should it happen?</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Mo.js</h1>
+      <iframe class="fadeInLeft animated"></iframe>
+    </div>
+  </div>
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>GreenSock</h1>
+      <iframe class="fadeInLeft animated"></iframe>
+    </div>
+  </div>
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Anime.js</h1>
+      <iframe class="fadeInLeft animated"></iframe>
+    </div>
   </div>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/Scrollify/jquery.scrollify.js"></script>

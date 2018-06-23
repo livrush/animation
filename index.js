@@ -1,7 +1,12 @@
 const iframeSrcs = [
+  '',
+  '',
+  '',
+  '',
   'https://daneden.github.io/animate.css/',
   'http://ianlunn.github.io/Hover/',
   'http://www.joerezendes.com/projects/Woah.css/',
+  '',
   'http://mojs.io/',
   'https://greensock.com/',
   'http://animejs.com/',
@@ -13,12 +18,15 @@ $(document).ready(function() {
     easing: "easeOutExpo",
     scrollSpeed: 200,
     overflowScroll: false,
-    before: function(x, y) {
-      console.log(x, y);
-      const $firstSection = $('.section.empty').first();
-      const iframeExists = $firstSection.children('iframe').length;
-      if (iframeExists) $firstSection.children('iframe').attr('src', iframeSrcs.shift());
-      $firstSection.removeClass('empty');
+    before: function(x) {
+      console.log(x);
+      const $firstSection = $('.section').first();
+      const currentSection = $('.section').get(x);
+      const $currentSection = $(currentSection);
+      const iframeExists = $currentSection.children().children('iframe').length;
+      if (iframeExists) $currentSection.children('.section-inner').children('iframe').attr('src', iframeSrcs[x]);
+      $currentSection.addClass('empty')
+      setTimeout(() => $currentSection.removeClass('empty'));
     }
   });
 
