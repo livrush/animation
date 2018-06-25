@@ -21,6 +21,7 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 400px;
 }
 
 iframe {
@@ -73,6 +74,11 @@ h3 {
 
 .section.secondary.empty > * {
   display: none!important;
+}
+
+.body {
+  height: 40vh;
+  padding-top: 50px;
 }
 
 /* .section:nth-of-type(2n) {
