@@ -38,7 +38,12 @@ $(document).ready(function() {
     }, 500)
   })
 
-  $('.img-venus-keyframes').click(e => $(e.currentTarget).fadeOut(1000));
+  let venusKeyframeState = true;
+  $('.img-venus').click(e => {
+    if (venusKeyframeState) $('.img-venus-keyframes').fadeOut(1000);
+    else $('.img-venus-keyframes').fadeIn(1000);
+    venusKeyframeState = !venusKeyframeState;
+  });
 
 });
 
