@@ -51,25 +51,96 @@
         <h1 class="animated flash infinite animation-duration-3">Animation</h1>
         <h1>?</h1>
       </div>
-      <p class="animated fadeInRight animation-delay-750">Improved user experience</p>
-    </div>
-  </div>
-
-  <div class="section secondary">
-    <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Animation in CSS</h1>
-      <label for="">Two parts</label>
-      <ol>
-        <li>What should happen?</li>
-        <li>How should it happen?</li>
+      <ol class="body">
+          <li class="animated fadeInRight animation-delay-500">To add visual interest</li>
+          <li class="animated fadeInRight animation-delay-750">Act as a response</li>
+          <li class="animated fadeInRight animation-delay-1000">Act as a notification</li>
       </ol>
     </div>
   </div>
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Key frames</h1>
-      <div class="d-flex">
+      <h1>Animation in CSS</h1>
+      <ol class="body">
+        <li class="animated fadeInRight animation-delay-500">Pseudo Selectors</li>
+        <li class="animated fadeInRight animation-delay-750">Transition Property</li>
+        <li class="animated fadeInRight animation-delay-1000">Keyframes</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Pseudo selectors</h1>
+      <div class="d-flex body">
+          <div class="shadow container-img-venus animated">
+            <div class="img-venus">
+              <img class="img-venus-pseudo" src="assets/venus-final.gif" alt="">
+            </div>
+          </div>
+          <figure>
+            <figcaption>Animating with Pseudo selectors</figcaption>
+            <pre>
+              <code>
+  .img-venus-pseudo:hover {
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+  }
+              </code>
+            </pre>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>Pseudo selectors</h1>
+      <h3>Paired with the Transition Property</h3>
+      <div class="d-flex body">
+          <div class="shadow container-img-venus animated">
+            <div class="img-venus">
+              <img class="img-venus-pseudo" src="assets/venus-final.gif" alt="">
+            </div>
+          </div>
+          <figure>
+            <pre>
+              <code>
+  .img-venus-pseudo-transition {
+    transition: 500ms;
+  }
+
+  .img-venus-pseudo:hover {
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+  }
+              </code>
+            </pre>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h1>CSS Keyframes</h1>
+      <h3>Two parts</h3>
+      <ol class="body">
+        <li class="animated fadeInRight animation-delay-500">What should happen?</li>
+        <li class="animated fadeInRight animation-delay-750">How should it happen?</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h3>Part 1</h3>
+      <h1>Making Keyframes</h1>
+      <h3>Or, what should happen?</h3>
+      <div class="d-flex body">
         <div class="shadow container-img-venus animated">
           <div class="img-venus img-venus-keyframes">
             <img src="assets/venus-keyframe.gif" alt="">
@@ -79,19 +150,43 @@
           </div>
         </div>
         <figure>
-          <figcaption>Keyframes in CSS</figcaption>
           <pre>
             <code>
-  @keyframes sway {
+  @keyframes fadeOut {
     from {
-      transform: translateY(10rem);
-    }
-    50% {
-      transform: translateY(-10rem);
+      opacity: 1;
     }
     to {
-      transform: translateY(10rem);
+      opacity: 0;
     }
+  }
+            </code>
+          </pre>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="section secondary">
+    <div class="section-inner animated fadeIn animation-delay-500">
+      <h3>Part 2</h3>
+      <h1>Applying Properties</h1>
+      <h3>Or, how should it happen?</h3>
+      <div class="d-flex body">
+        <div class="shadow container-img-venus animated">
+          <div class="img-venus img-venus-keyframes">
+            <img src="assets/venus-keyframe.gif" alt="">
+          </div>
+          <div class="img-venus">
+            <img src="assets/venus-final.gif" alt="">
+          </div>
+        </div>
+        <figure>
+          <pre>
+            <code>
+  .image-venus {
+    animation-name: fadeOut;
+    animation-duration: 
   }
             </code>
           </pre>
@@ -148,6 +243,24 @@
       <iframe class="fadeInLeft animated"></iframe>
     </div>
   </div>
+
+
+  <div class="section secondary">
+      <div class="section-inner animated fadeIn animation-delay-500">
+        <div class="d-flex">
+          <h1>What to &nbsp;</h1>
+          <h1 class="animated flash infinite animation-duration-3">keep in mind</h1>
+          <h1>?</h1>
+        </div>
+        <div class="body">
+          <h2 class="animated fadeInRight animation-delay-500">Does the animation: </h2>
+          <br>
+          <h3 class="animated fadeInRight animation-delay-750">Hinder/reduce the usability?</h3>
+          <h3 class="animated fadeInRight animation-delay-750">Require resources that will increase load time?</h3>
+          <h3 class="animated fadeInRight animation-delay-750">Improve UX in a functional/delightful way?</h3>
+        </div>
+      </div>
+    </div>
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">

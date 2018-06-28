@@ -50,6 +50,10 @@ h3 {
   font-size: 5vh;
 }
 
+li {
+  font-size: 4vh;
+}
+
 .simpleEntrance {
   animation-duration: 6s;
 }
@@ -81,35 +85,18 @@ h3 {
   padding-top: 50px;
 }
 
-/* .section:nth-of-type(2n) {
-  background: url(/assets/billie-holiday.png);
-} */
-
-.animation-duration-3 {
-  animation-duration: 3s;
-}
-
-.animation-delay-500 {
-  animation-delay: 500ms;
-}
-
-.animation-delay-750 {
-  animation-delay: 750ms;
-}
-
-.animation-delay-1000 {
-  animation-delay: 1000ms;
-}
+.animation-duration-3 { animation-duration: 3s; }
+.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-750 { animation-delay: 750ms; }
+.animation-delay-1000 { animation-delay: 1000ms; }
+.animation-delay-1250 { animation-delay: 1250ms; }
+.animation-delay-1500 { animation-delay: 1500ms; }
 
 .container-img-venus {
   cursor: pointer;
   height: 400px;
   width: 450px;
   position: relative;
-}
-
-.container-img-venus:hover {
-  /* animation-name: shake; */
 }
 
 .img-venus {
@@ -119,6 +106,15 @@ h3 {
   display: flex;
   justify-content: center;
   position: absolute;
+}
+
+.img-venus-pseudo-transition {
+  transition: 500ms;
+}
+
+.img-venus-pseudo:hover {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
 }
 
 .img-venus-keyframes {
