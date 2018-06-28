@@ -11,6 +11,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
   <div class="section animated fadeIn">
@@ -21,6 +22,9 @@
         <h1 class="flyIn">and Using</h1>
         <h1 class="wowzors">Animation</h1>
         <h1 class="simpleEntrance">In CSS and JS</h1>
+      </div>
+      <div class="title d-none footer animated fadeIn animation-delay-1500">
+        <h4><i class="fas fa-arrow-up animated bounce infinite animation-delay-500"></i> Use arrow keys to progress <i class="fas fa-arrow-down animated bounce infinite"></i></h4>
       </div>
     </div>
   </div>
@@ -80,7 +84,6 @@
             </div>
           </div>
           <figure>
-            <figcaption>Animating with Pseudo selectors</figcaption>
             <pre>
               <code>
   .img-venus-pseudo:hover {
@@ -102,7 +105,7 @@
       <div class="d-flex body">
           <div class="shadow container-img-venus animated">
             <div class="img-venus">
-              <img class="img-venus-pseudo" src="assets/venus-final.gif" alt="">
+              <img class="img-venus-pseudo img-venus-pseudo-transition" src="assets/venus-final.gif" alt="">
             </div>
           </div>
           <figure>
@@ -185,8 +188,13 @@
           <pre>
             <code>
   .image-venus {
+    animation-delay: 0ms;
+    animation-direction: normal;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
     animation-name: fadeOut;
-    animation-duration: 
+    animation-timing-function: ease;
   }
             </code>
           </pre>

@@ -48,10 +48,10 @@ $(document).ready(function() {
 });
 
 var lineDrawing = anime({
-  targets: '#Spray circle',
+  targets: '#Bottle path',
   strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 1500,
+  easing: 'linear',
+  duration: 3000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
   loop: true

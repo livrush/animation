@@ -50,6 +50,10 @@ h3 {
   font-size: 5vh;
 }
 
+h4 {
+  font-size: 3vh;
+}
+
 li {
   font-size: 4vh;
 }
@@ -91,6 +95,11 @@ li {
 .animation-delay-1000 { animation-delay: 1000ms; }
 .animation-delay-1250 { animation-delay: 1250ms; }
 .animation-delay-1500 { animation-delay: 1500ms; }
+
+.title.footer {
+  position: absolute;
+  bottom: 25px;
+}
 
 .container-img-venus {
   cursor: pointer;
