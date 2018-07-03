@@ -8,6 +8,7 @@ const iframeSrcs = [
   '',
   '',
   '',
+  '',
   'https://daneden.github.io/animate.css/',
   'http://ianlunn.github.io/Hover/',
   'http://www.joerezendes.com/projects/Woah.css/',
@@ -43,7 +44,7 @@ $(document).ready(function() {
   })
 
   let venusKeyframeState = true;
-  $('.img-venus').click(e => {
+  $('.img-venus.action').click(e => {
     if (venusKeyframeState) $('.img-venus-keyframes').fadeOut(1000);
     else $('.img-venus-keyframes').fadeIn(1000);
     venusKeyframeState = !venusKeyframeState;
