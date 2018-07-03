@@ -46,7 +46,8 @@ h2 {
   font-size: 7vh;
 }
 
-h3 {
+h3,
+li {
   font-size: 5vh;
 }
 
@@ -56,10 +57,6 @@ h4 {
 
 pre code {
   font-size: 1.25rem;
-}
-
-li {
-  font-size: 4vh;
 }
 
 .simpleEntrance {
@@ -121,6 +118,19 @@ li {
   position: absolute;
 }
 
+.img-venus-text {
+  color: white;
+  left: 50%;
+  position: absolute;
+  top: 15px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.img-venus-text-adjust {
+  mix-blend-mode: difference;
+}
+
 .img-venus-pseudo-transition {
   transition: 500ms;
 }
@@ -128,6 +138,12 @@ li {
 .img-venus-pseudo:hover {
   filter: blur(20px);
   -webkit-filter: blur(20px);
+}
+
+.img-venus-keyframes-single {
+  height: 178px;
+  width: 200px;
+  margin: 1vh;
 }
 
 .img-venus-keyframes {
