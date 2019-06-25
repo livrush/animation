@@ -14,48 +14,46 @@ body {
   padding: 0;
 }
 
-figure {
+.figure {
   background: rgba(255, 255, 255, 0.5);
-  padding: 0 50px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
 }
 
-iframe {
+.iframe {
   background: #fff;
   border: none;
   height: 70vh;
-  width: 60vw;
+  width: 80vw;
 }
 
-h1, h2, h3 {
+.h1, .h2, .h3 {
   color: #fff;
   margin: 0;
   text-align: center;
 }
 
-h1 {
+.h1 {
   font-family: Limelight;
   font-size: 10vh;
 }
 
-h2 {
+.h2 {
   font-size: 7vh;
 }
 
-h3,
-li {
+.h3,
+.list-text {
   font-size: 5vh;
 }
 
-h4 {
+.h4 {
   font-size: 3vh;
 }
 
-pre code {
+.code {
   font-size: 1.25rem;
 }
 
@@ -86,8 +84,7 @@ pre code {
 }
 
 .body {
-  height: 40vh;
-  padding-top: 50px;
+  padding-top: 4rem;
 }
 
 .animation-duration-3 { animation-duration: 3s; }
@@ -99,7 +96,7 @@ pre code {
 
 .title.footer {
   position: absolute;
-  bottom: 25px;
+  bottom: 2rem;
 }
 
 .btn-big {
@@ -110,17 +107,21 @@ pre code {
   width: 25vh;
 }
 
+.code-block,
+.img-venus-block {
+  height: 25rem;
+  width: 28rem;
+}
+
 .container-img-venus {
   cursor: pointer;
-  height: 400px;
-  width: 450px;
   position: relative;
 }
 
 .img-venus {
   background: black;
-  height: 400px;
-  width: 450px;
+  height: 25rem;
+  width: 28rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -131,7 +132,7 @@ pre code {
   color: white;
   left: 50%;
   position: absolute;
-  top: 15px;
+  top: 1rem;
   transform: translateX(-50%);
   z-index: 10;
 }
@@ -145,13 +146,13 @@ pre code {
 }
 
 .img-venus-pseudo:hover {
-  filter: blur(20px);
-  -webkit-filter: blur(20px);
+  filter: blur(1.25rem);
+  -webkit-filter: blur(1.25rem);
 }
 
 .img-venus-keyframes-single {
-  height: 178px;
-  width: 200px;
+  height: 11.125rem;
+  width: 12.5rem;
   margin: 1vh;
 }
 
@@ -185,15 +186,15 @@ pre code {
   z-index: -1;
   position: absolute;
   content: "";
-  bottom: 15px;
-  left: 10px;
+  bottom: 1rem;
+  left: 0.5rem;
   width: 50%;
   top: 80%;
-  max-width:300px;
+  max-width: 18.75rem;
   background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
+  -webkit-box-shadow: 0 1rem 0.5rem #777;
+  -moz-box-shadow: 0 1rem 0.5rem #777;
+  box-shadow: 0 1rem 0.5rem #777;
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -o-transform: rotate(-3deg);
@@ -207,6 +208,6 @@ pre code {
   -o-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
   transform: rotate(3deg);
-  right: 10px;
+  right: 0.5rem;
   left: auto;
 }

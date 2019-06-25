@@ -25,15 +25,15 @@
 <body>
   <div class="section animated fadeIn">
     <div class="section-inner">
-      <h1 class="btn-big btn-info btn-begin position-absolute animated pulse infinite rounded-circle d-flex align-content-center justify-content-center">Begin</h1>
+      <h1 class="h1 btn-big btn-info btn-begin position-absolute animated pulse infinite rounded-circle d-flex align-content-center justify-content-center">Begin</h1>
       <div class="title d-none animated fadeIn animation-duration-3">
-        <h1 class="comeInStyle">Understanding</h1>
-        <h1 class="flyIn">and Using</h1>
-        <h1 class="wowzors">Animation</h1>
-        <h1 class="simpleEntrance">In CSS and JS</h1>
+        <h1 class="h1 comeInStyle">Understanding</h1>
+        <h1 class="h1 flyIn">and Using</h1>
+        <h1 class="h1 wowzors">Animation</h1>
+        <h1 class="h1 simpleEntrance">In CSS and JS</h1>
       </div>
       <div class="title d-none footer animated fadeIn animation-delay-1500 animation-duration-3">
-        <h4><i class="fas fa-arrow-up animated bounce infinite animation-delay-500"></i> Use arrow keys to progress <i class="fas fa-arrow-down animated bounce infinite"></i></h4>
+        <h4 class="h4"><i class="fas fa-arrow-up animated bounce infinite animation-delay-500"></i> Use arrow keys to progress <i class="fas fa-arrow-down animated bounce infinite"></i></h4>
       </div>
     </div>
   </div>
@@ -41,13 +41,13 @@
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
       <div class="d-flex">
-        <h1>What is&nbsp;</h1>
-        <h1 class="animated bounce infinite">Animation</h1>
-        <h1>?</h1>
+        <h1 class="h1">What is&nbsp;</h1>
+        <h1 class="h1 animated bounce infinite">Animation</h1>
+        <h1 class="h1">?</h1>
       </div>
       <div class="body">
-        <h3 class="animated fadeInRight animation-delay-750">Wikipedia says...</h3>
-        <h2 class="animated fadeInRight animation-delay-1000">
+        <h3 class="h3 animated fadeInRight animation-delay-750">Wikipedia says...</h3>
+        <h2 class="h2 animated fadeInRight animation-delay-1000">
           "Animation is a dynamic medium
           <br>in which images or objects
           <br>are manipulated to appear
@@ -60,46 +60,46 @@
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
       <div class="d-flex">
-        <h1>Why use&nbsp;</h1>
-        <h1 class="animated flash infinite animation-duration-3">Animation</h1>
-        <h1>?</h1>
+        <h1 class="h1">Why use&nbsp;</h1>
+        <h1 class="h1 animated flash infinite animation-duration-3">Animation</h1>
+        <h1 class="h1">?</h1>
       </div>
       <ol class="body">
-        <li class="animated fadeInRight animation-delay-500">To add visual interest</li>
-        <li class="animated fadeInRight animation-delay-750">Act as a response</li>
-        <li class="animated fadeInRight animation-delay-1000">Act as a notification</li>
+        <li class="animated list-text fadeInRight animation-delay-500">To add visual interest</li>
+        <li class="animated list-text fadeInRight animation-delay-750">Act as a response</li>
+        <li class="animated list-text fadeInRight animation-delay-1000">Act as a notification</li>
       </ol>
     </div>
   </div>
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Animation in CSS</h1>
+      <h1 class="h1">Animation in CSS</h1>
       <ol class="body">
-        <li class="animated fadeInRight animation-delay-500">Pseudo Selectors</li>
-        <li class="animated fadeInRight animation-delay-750">Transition Property</li>
-        <li class="animated fadeInRight animation-delay-1000">Keyframes</li>
+        <li class="animated list-text fadeInRight animation-delay-500">Pseudo Selectors</li>
+        <li class="animated list-text fadeInRight animation-delay-750">Transition Property</li>
+        <li class="animated list-text fadeInRight animation-delay-1000">Keyframes</li>
       </ol>
     </div>
   </div>
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Pseudo Selectors</h1>
+      <h1 class="h1">Pseudo Selectors</h1>
       <div class="d-flex body">
-          <div class="shadow container-img-venus animated">
+          <div class="shadow container-img-venus img-venus-block animated">
             <span class="img-venus-text">Hover over me!</span>
             <div class="img-venus">
               <img class="img-venus-pseudo" src="assets/venus-frame.png" alt="">
             </div>
           </div>
-          <figure>
+          <figure class="figure code-block">
             <pre>
-              <code>
-  .img-venus-pseudo:hover {
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-  }
+              <code class="code">
+.img-venus-pseudo:hover {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}
               </code>
             </pre>
           </figure>
@@ -110,26 +110,26 @@
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Pseudo Selectors</h1>
-      <h3>Paired with the Transition Property</h3>
+      <h1 class="h1">Pseudo Selectors</h1>
+      <h3 class="h3">Paired with  the Transition Property</h3>
       <div class="d-flex body">
-          <div class="shadow container-img-venus animated">
+          <div class="shadow container-img-venus img-venus-block animated">
             <span class="img-venus-text">Hover over me!</span>
             <div class="img-venus">
               <img class="img-venus-pseudo img-venus-pseudo-transition" src="assets/venus-frame.png" alt="">
             </div>
           </div>
-          <figure>
+          <figure class="figure code-block">
             <pre>
-              <code>
-  .img-venus-pseudo-transition {
-    transition: 500ms;
-  }
+              <code class="code">
+.img-venus-pseudo-transition {
+  transition: 500ms;
+}
 
-  .img-venus-pseudo:hover {
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-  }
+.img-venus-pseudo:hover {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}
               </code>
             </pre>
           </figure>
@@ -140,8 +140,8 @@
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Keyframes</h1>
-      <h3>What are they?</h3>
+      <h1 class="h1">Keyframes</h1>
+      <h3 class="h3">What are  they?</h3>
       <div class="body">
         <div class="d-flex space-between">
           <img src="assets/venus-keyframe-1.png" class="img-venus-keyframes-single animated fadeInRight animation-delay-500">
@@ -158,22 +158,22 @@
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>CSS Keyframes</h1>
-      <h3>Two parts</h3>
+      <h1 class="h1">CSS Keyframes</h1>
+      <h3 class="h3">Two parts </h3>
       <ol class="body">
-        <li class="animated fadeInRight animation-delay-500">What should happen?</li>
-        <li class="animated fadeInRight animation-delay-750">How should it happen?</li>
+        <li class="animated list-text fadeInRight animation-delay-500">What should happen?</li>
+        <li class="animated list-text fadeInRight animation-delay-750">How should it happen?</li>
       </ol>
     </div>
   </div>
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h3>Part 1</h3>
-      <h1>Making Keyframes</h1>
-      <h3>Or, what should happen?</h3>
+      <h3 class="h3">Part 1 </h3>
+      <h1 class="h1">Making Keyframes</h1>
+      <h3 class="h3">Or,  what should happen?</h3>
       <div class="d-flex body">
-        <div class="shadow container-img-venus animated">
+        <div class="shadow container-img-venus img-venus-block animated">
           <div class="img-venus img-venus-keyframes">
             <img src="assets/venus-keyframe.gif" alt="">
           </div>
@@ -181,17 +181,17 @@
             <img src="assets/venus-final.gif" alt="">
           </div>
         </div>
-        <figure>
+        <figure class="figure code-block">
           <pre>
-            <code>
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+            <code class="code">
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
+}
             </code>
           </pre>
         </figure>
@@ -201,11 +201,11 @@
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h3>Part 2</h3>
-      <h1>Applying Properties</h1>
-      <h3>Or, how should it happen?</h3>
+      <h3 class="h3">Part 2 </h3>
+      <h1 class="h1">Applying Properties</h1>
+      <h3 class="h3">Or,  how should it happen?</h3>
       <div class="d-flex body">
-        <div class="shadow container-img-venus animated">
+        <div class="shadow container-img-venus img-venus-block animated">
           <span class="img-venus-text img-venus-text-adjust">Click me!</span>
           <div class="img-venus action img-venus-keyframes">
             <img src="assets/venus-keyframe.gif" alt="">
@@ -214,18 +214,18 @@
             <img src="assets/venus-final.gif" alt="">
           </div>
         </div>
-        <figure>
+        <figure class="figure code-block">
           <pre>
-            <code>
-  .image-venus {
-    animation-delay: 0ms;
-    animation-direction: normal;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-name: fadeOut;
-    animation-timing-function: ease;
-  }
+            <code class="code">
+.image-venus {
+  animation-delay: 0ms;
+  animation-direction: normal;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: fadeOut;
+  animation-timing-function: ease;
+}
             </code>
           </pre>
         </figure>
@@ -235,20 +235,20 @@
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Animate.css</h1>
-      <iframe class="fadeInLeft animated"></iframe>
+      <h1 class="h1">Animate.css</h1>
+      <iframe class="iframe fadeInLeft animated"></iframe>
     </div>
   </div>
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Hover.css</h1>
-      <iframe class="fadeInLeft animated"></iframe>
+      <h1 class="h1">Hover.css</h1>
+      <iframe class="iframe fadeInLeft animated"></iframe>
     </div>
   </div>
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Woah.css</h1>
-      <iframe class="fadeInLeft animated"></iframe>
+      <h1 class="h1">Woah.css</h1>
+      <iframe class="iframe fadeInLeft animated"></iframe>
       <br>
       <p>Check out <a class="text-info" href="http://www.joerezendes.com/" target="_blank">this dude's portfolio</a>, it's a trip</p>
     </div>
@@ -256,27 +256,27 @@
   
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Animation in JS</h1>
-      <h3 class="animated rubberBand infinite">Any which way</h3>
+      <h1 class="h1">Animation in JS</h1>
+      <h3 class="h3 animated rubberBand infinite">Any which way</h3>
     </div>
   </div>
 
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Mo.js</h1>
-      <iframe class="fadeInLeft animated"></iframe>
+      <h1 class="h1">Mo.js</h1>
+      <iframe class="iframe fadeInLeft animated"></iframe>
     </div>
   </div>
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>GreenSock</h1>
-      <iframe class="fadeInLeft animated"></iframe>
+      <h1 class="h1">GreenSock</h1>
+      <iframe class="iframe fadeInLeft animated"></iframe>
     </div>
   </div>
   <div class="section secondary">
     <div class="section-inner animated fadeIn animation-delay-500">
-      <h1>Anime.js</h1>
-      <iframe class="fadeInLeft animated"></iframe>
+      <h1 class="h1">Anime.js</h1>
+      <iframe class="iframe fadeInLeft animated"></iframe>
     </div>
   </div>
 
@@ -284,16 +284,16 @@
   <div class="section secondary">
       <div class="section-inner animated fadeIn animation-delay-500">
         <div class="d-flex">
-          <h1>What to &nbsp;</h1>
-          <h1 class="animated flash infinite animation-duration-3">keep in mind</h1>
-          <h1>?</h1>
+          <h1 class="h1">What to &nbsp;</h1>
+          <h1 class="h1 animated flash infinite animation-duration-3">keep in mind</h1>
+          <h1 class="h1">?</h1>
         </div>
         <div class="body">
-          <h2 class="animated fadeInRight animation-delay-500">Does the animation: </h2>
+          <h2 class="h2 animated fadeInRight animation-delay-500">Does the animation: </h2>
           <br>
-          <h3 class="animated fadeInRight animation-delay-750">Hinder/reduce the usability?</h3>
-          <h3 class="animated fadeInRight animation-delay-750">Require resources that will increase load time?</h3>
-          <h3 class="animated fadeInRight animation-delay-750">Improve UX in a functional/delightful way?</h3>
+          <h3 class="h3 animated fadeInRight animation-delay-750">Hinder/reduce the usability?</h3>
+          <h3 class="h3 animated fadeInRight animation-delay-750">Require resources that will increase load time?</h3>
+          <h3 class="h3 animated fadeInRight animation-delay-750">Improve UX in a functional/delightful way?</h3>
         </div>
       </div>
     </div>
@@ -303,8 +303,8 @@
       <div class="bg-info btn-big animated bounce infinite rounded-circle d-flex align-content-center justify-content-center">
         <img id="pafiume" src="assets/pafiume.svg" alt="">
       </div>
-      <h1 class="animated zoomInDown animation-delay-500">Olivia Sabo-Rush</h1>
-      <h3 class="animated zoomInDown animation-delay-1000">Please visit <a class="text-info" href="http://pafiu.me">pafiu.me</a></h3>
+      <h1 class="h1 animated zoomInDown animation-delay-500">Olivia Sabo-Rush</h1>
+      <h3 class="h3 animated zoomInDown animation-delay-1000">Please visit <a class="text-info" href="http://pafiu.me">pafiu.me</a></h3>
     </div>
   </div>
 
