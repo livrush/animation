@@ -13,8 +13,10 @@ const iframeSrcs = [
   'http://ianlunn.github.io/Hover/',
   'http://www.joerezendes.com/projects/Woah.css/',
   '',
-  'http://mojs.io/',
+  // 'http://mojs.io/',
+  'http://airbnb.io/lottie/',
   'https://greensock.com/',
+  'https://www.delac.io/wow/',
   'http://animejs.com/',
 ];
 
