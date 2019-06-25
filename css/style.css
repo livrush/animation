@@ -26,6 +26,10 @@ body {
   background: #fff;
   border: none;
   height: 70vh;
+  width: 60vw;
+}
+
+.iframe.wide {
   width: 80vw;
 }
 
